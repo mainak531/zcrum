@@ -1,3 +1,65 @@
+# 🏁 SprintBoard – Agile Sprint & Issue Management Tool
+
+**SprintBoard** is a modern agile project management system with organization-based access control, sprint planning, drag-and-drop issue boards, and markdown support.
+
+Built using **Next.js 14**, **Prisma ORM**, **PostgreSQL**, and **Clerk Authentication**, this project mimics the sprint lifecycle workflow used in real-world agile teams.
+
+---
+
+## 🔥 Features
+
+### 🔐 Organization & Authentication
+- Role-based access via **Clerk** (`org:admin`, `org:member`)
+- Project creation restricted to admins only
+- Multi-organization support via Clerk's org switching
+
+### 🚀 Project & Sprint Management
+- Create/delete projects under specific organizations
+- Auto-generated sprint naming (e.g., `PROJ-1`)
+- Sprint lifecycle:
+  - **Planned** – upcoming
+  - **Active** – current sprint
+  - **Completed** – archived
+- Date validation to prevent invalid sprint start/end
+
+### ✅ Issue Tracking System
+- Create issues with:
+  - Title, Markdown description
+  - Assignee selection (from org members)
+  - Priority (LOW → URGENT)
+  - Status column: `TODO`, `IN PROGRESS`, `DONE`
+- Drag-and-drop reordering within and across status columns
+- Live updates using optimistic UI + toast notifications
+
+---
+
+## 📦 Tech Stack
+
+| Category      | Stack                                                   |
+|---------------|----------------------------------------------------------|
+| Frontend      | Next.js App Router, React 19, Tailwind CSS, ShadCN       |
+| Auth & RBAC   | Clerk (users + organizations + roles)                    |
+| Database      | PostgreSQL (via Prisma ORM)                              |
+| UI Libraries  | Sonner (toast), Lucide Icons, @hello-pangea/dnd, MDEditor|
+| State & Hooks | Custom `useFetch` hook, React Hook Form, Zod Validation  |
+
+---
+
+## 📸 Screenshots
+
+> [Optional – Add images/GIFs showcasing sprint creation, issue drawer, and board]
+
+---
+
+## ⚙️ Getting Started
+
+```bash
+git clone https://github.com/yourgithub/sprintboard
+cd sprintboard
+npm install
+npx prisma generate
+npx prisma db push
+npm run dev
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
