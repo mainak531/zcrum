@@ -1,6 +1,6 @@
-# 🏁 SprintBoard – Agile Sprint & Issue Management Tool
+# 🏁 **Zcrum – Agile Project Management Platform**  
 
-**SprintBoard** is a modern agile project management system with organization-based access control, sprint planning, drag-and-drop issue boards, and markdown support.
+**Zcrum** is a modern agile project management system with organization-based access control, sprint planning, drag-and-drop issue boards, and markdown support.
 
 Built using **Next.js 14**, **Prisma ORM**, **PostgreSQL**, and **Clerk Authentication**, this project mimics the sprint lifecycle workflow used in real-world agile teams.
 
