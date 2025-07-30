@@ -7,6 +7,15 @@ Built using **Next.js 14**, **Prisma ORM**, **PostgreSQL**, and **Clerk Authenti
 ---
 
 ## 🔥 Features
+## 📌 Key Features
+
+- ✅ **Clerk Auth Integration**: Secure login/signup, user sessions, and organization support
+- 🏢 **Organization Management**: View and switch orgs, invite users, enforce org-level roles (`org:admin`)
+- 📁 **Project Control**: Create/delete projects per org; accessible only by authorized members
+- 📦 **Sprint Planning**: Create sprints with start/end dates, manage status (`PLANNED`, `ACTIVE`, `COMPLETED`)
+- 🧵 **Issue Management**: Assign issues to users, set priority/status, and order by status & drag-drop support
+- 🔐 **Role-Based Access Control**: Only org admins can manage projects/sprints
+- 📚 **Modular App Router Structure**: Clear separation of server actions, client components, and page routes
 
 ### 🔐 Organization & Authentication
 - Role-based access via **Clerk** (`org:admin`, `org:member`)
