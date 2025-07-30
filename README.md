@@ -42,6 +42,27 @@ Built using **Next.js 14**, **Prisma ORM**, **PostgreSQL**, and **Clerk Authenti
 | Database      | PostgreSQL (via Prisma ORM)                              |
 | UI Libraries  | Sonner (toast), Lucide Icons, @hello-pangea/dnd, MDEditor|
 | State & Hooks | Custom `useFetch` hook, React Hook Form, Zod Validation  |
+---
+## 🧩 UI Components (Accessible + Headless + Themed)
+
+> Built on Radix Primitives + Tailwind + ShadCN Design System
+
+| Component    | Description |
+|--------------|-------------|
+| `Button`, `Avatar`, `Badge` | Base components with CVA variants |
+| `Input`, `Textarea`         | Fully accessible form fields, aria-compliant |
+| `Select`, `Popover`, `Tabs` | Built with Radix UI, keyboard-navigable |
+| `Card`, `Dialog`, `Drawer`  | Layouts with animated transitions |
+| `Toast` (`Sonner`)          | System-themed notifications |
+| `Carousel`                  | Powered by Embla Carousel, mobile-ready |
+| `Toaster`                   | Dark/light mode aware, dynamic styles via `next-themes` |
+
+All components:
+- 🌙 Support dark/light mode
+- ♿ Fully accessible (Radix + WAI-ARIA)
+- 🧠 Themed using Tailwind CSS tokens
+- ⚡ Composable via `@/lib/utils` and `class-variance-authority`
+
 
 ---
 
